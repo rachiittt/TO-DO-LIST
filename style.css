@@ -117,3 +117,65 @@ ul li span:hover{
     background-color: #edeef0;
     border-radius: 50%;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .todolist {
+        width: 90%;
+        padding: 30px 20px 40px;
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    input {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 12px 8px 12px 40px;
+    }
+
+    ul li::before {
+        height: 24px;
+        width: 24px;
+        top: 12px;
+        left: 5px;
+    }
+}
+
+/* Laptop & Desktop Responsiveness */
+@media (min-width: 769px) {
+    .todolist {
+        width: 540px;
+        padding: 40px;
+    }
+
+    .search {
+        flex-direction: row;
+    }
+
+    input {
+        width: 70%;
+        padding: 14px;
+        font-size: 18px;
+    }
+
+    button {
+        width: 30%;
+        padding: 14px;
+        font-size: 18px;
+    }
+}
